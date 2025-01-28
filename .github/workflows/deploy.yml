@@ -26,8 +26,8 @@ jobs:
             - name: Run tests
               run: npm run test
 
-            - name: Build project
-              run: npm run build
+            - name: Build Angular app
+              run: ng build --prod --base-href /angular-app/
 
             - name: Deploy to GitHub Pages
               uses: peaceiris/actions-gh-pages@v3
