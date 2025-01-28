@@ -9,12 +9,12 @@ export default [
   {languageOptions: { globals: globals.browser }},
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
-  // {
-  //   extends: ["eslint:recommended", "plugin:prettier/recommended"],
-  //   rules: {
-  //     quotes: ["error", "single"],
-  //     // no-console: "error",
-  //     curly: ["error", "all"]
-  //   }
-  // }
+  {
+    extends: ["eslint:recommended", "plugin:prettier/recommended"],
+    rules: {
+      quotes: ["error", "single"],
+      "no-console": "error",
+      curly: ["error", "all"]
+    }
+  }
 ];
